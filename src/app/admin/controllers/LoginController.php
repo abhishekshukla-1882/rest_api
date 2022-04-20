@@ -9,7 +9,18 @@ class LoginController extends Controller
 {
 
     public function logoAction(){
-
+        $key = "example_key";
+        $payload = array(
+            "iss" => "http://example.org",
+            "aud" => "http://example.com",
+            "iat" => 1356999524,
+            "nbf" => 1357000000,
+            "role" => "admin"
+        );
+        $jwt = JWT::encode($payload, $key, 'HS256');
+        echo $jwt;
+        die;
+        // $decoded = JWT::decode($jwt, new Key($key, 'HS256'));
         
     }
     public function logoutAction(){

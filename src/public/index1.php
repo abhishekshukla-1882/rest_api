@@ -275,3 +275,5 @@ try {
 } catch (\Exception $e) {
     echo 'Exception: ', $e->getMessage();
 }
+$key = "example_key";
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vZXhhbXBsZS5vcmciLCJhdWQiOiJodHRwOi8vZXhhbXBsZS5jb20iLCJpYXQiOjEzNTY5OTk1MjQsIm5iZiI6MTM1NzAwMDAwMCwicm9sZSI6ImFkbWluIn0.73zdZihRYVg2Lb1ol6wd39RYtE_BpuAHxXq6WLmYDHk
